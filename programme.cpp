@@ -417,16 +417,7 @@ bool Luhn_algo(const string& card_number)
         sum += digit;
         alternate = !alternate;
     }
-    // return (sum % 10 == 0);
-    if(sum % 10 == 0)
-    {
-        cout<<"Payment confirmed! \n";
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    return (sum % 10 == 0);
 }
 
 //Display recipt
